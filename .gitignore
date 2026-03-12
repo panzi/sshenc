@@ -1,0 +1,5 @@
+__pycache__
+sshenc.egg-info
+uv.lock
+.*
+!.gitignore

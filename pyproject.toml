@@ -1,0 +1,22 @@
+[project]
+name = "sshenc"
+description = "Encrypt/decrypt files using SSH keys."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-2.0"
+keywords = ["ssh", "encrypt", "decrypt"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "cryptography>=46.0.5",
+]
+dynamic = ["version"]
+[tool.setuptools.dynamic]
+version = {attr = "sshenc.__version__"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
